@@ -1,0 +1,146 @@
+.borde{
+    /* outline: 1px solid red; */
+    
+    
+}
+.withcss{
+    padding:20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+.ulheadr{
+    padding: 5px 15px;
+    border-radius: 20px;
+   
+}
+header{
+    margin-top: 10px;
+}
+header div button
+{
+    padding: 4px;
+    width:60px;
+    color:white;
+    border-radius: 10px;
+}
+.div-icon-headr{
+    display: none;
+    position: fixed;
+    right: 4%;
+    
+}
+nav.fixe{
+    position: fixed;
+    top: 10%;
+    right: 40%;
+    z-index: 11;
+    
+}
+
+   
+
+/*pbaba debut*/
+header div.pobabe ul li:first-child{
+    border-bottom: none;
+    text-align: end;
+    color: white;
+    font-weight: 900;
+    margin-bottom:-25px ;
+}
+header div.pobabe ul li:last-child{
+    border: none;
+}
+header nav ul.ulheadr {
+    letter-spacing: 0.9px;
+    cursor: pointer;
+    gap:15px;
+    padding: 6px 20px;
+    justify-content: center;
+}
+header ul li
+{
+    transition: 0.3s;
+}
+header ul li:hover{
+  color: rgb(189, 27, 27);
+}
+.pobabe
+{
+    display: flex;
+    justify-content: center;
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 11;
+    background-color:rgba(0, 0, 255, 0.249);
+    padding: 40px 20px;
+    
+}
+.pobabe ul{
+    animation: ulpobae 1s 1 ease-out;
+    background-color: black;
+    width: 90%;
+    /* animation: ; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* z-index: 20; */
+    margin-left: 18px;
+    cursor: pointer;
+    padding: 20px 10px;
+}
+.pobabe li{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.76);
+    width: 98%;
+    padding:8px 10px;
+    text-transform: capitalize;
+}
+.pobabe .icon-close{
+    font-size: 30px;
+    font-weight: 900;
+    transition: 0.3s;
+}
+.pobabe .icon-close:hover{
+    color:crimson;
+    transform: rotate(180deg);
+
+}
+/*animation*/
+@keyframes ulpobae{
+    0%{
+        scale: 0.5;
+    }
+    55%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@media (max-width:1020px) 
+{
+     nav.fixe{
+        right: 30%;
+    }
+}
+@media (max-width:759px) 
+{
+     nav.fixe{
+        right: 26%;
+    }
+}
+@media (max-width:550px)
+{
+   
+    .div-icon-headr{
+        
+    display: block;
+}
+header nav.nav{
+    display: none;
+}
+.pobabe{
+    display: block;
+}
+}

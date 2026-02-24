@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+html{
+    color:white;
+    font-family : "Roboto" , sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --primary:black;
+}
+.line-element{
+    margin: 10px;
+    width:calc(100%);
+    margin-left: -3px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.532);
+}
+.border{
+    border:1px solid red;
+}
+.borderCh{
+    border:1px solid blue;
+}
+a{
+    text-decoration: none;
+    
+}
+.widt-app{
+    width:94%;
+    margin: auto;
+    padding: 0px 40px;
+    /* margin-top: -10px; */
+    border-radius: 8px;
+    background-color: #424242;
+    margin-top: -24px;
+    
+}
+body{
+    background-color: var(--primary);
+}
+button{
+      cursor: pointer;
+}

@@ -1,0 +1,117 @@
+section h1{
+    font-size: 32px;
+    font-weight: 900;
+
+}
+section h1 span::before{
+    animation: webde 5s infinite ease-in-out;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    color:red;
+    content: "";
+
+}
+
+section.section-left p{
+    line-height: 1.8rem;
+}
+
+section.section-right img{
+    animation: myphot 1s 1;
+    border:1px solid gray;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: #94112b;
+}
+/*animation*/
+/*animation pour lecriture*/
+@keyframes webde{
+    0%{
+    
+            content: "w";
+        
+    }
+    5%{
+        content: "we";
+    }
+      20%{
+        content: "web";
+    }
+    25%{
+        content: "web D";
+    }
+    35%{
+        content: "web De";
+    }
+     40%{
+        content: "web Dev";
+    }
+    45%{
+        content: "web Deve";
+    }
+    55%{
+        content: "web Devel";
+    }
+    60%{
+        content: "web Devell";
+    }
+    70%{
+         content: "web Devello";
+    }
+    75%{
+         content: "web Devellop";
+    }
+    85%{
+         content: "web Devellope";
+    }
+    95%{
+  content: "web Develloper";
+    }
+    100%{
+   content: "web Develloper!";
+    }
+  
+}
+/*=========== animation pour lecriture ===============*/
+@keyframes myphot{
+    0%{
+        scale: 0.2;
+    }
+    
+    100%{
+        scale: 1;
+    }
+}
+main.main{
+    padding: 8px;
+}
+.div-link{
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.div-link .icons-link{
+    font-size: 35px;
+   transition: 0.3s;
+}
+.div-link .icons-link:hover{
+    color:red;
+    scale: 1.001;
+}
+@media (max-width:550px)
+{
+    main.main{
+        align-items: start;
+
+    }
+    main.main span{
+        font-size: 16px;
+    }
+}
+@media (min-width:800px)
+{
+    main.main img.photo{
+        width:200px;
+        /* height: 250px; */
+    }
+}
