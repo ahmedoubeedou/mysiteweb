@@ -7,6 +7,8 @@
     padding:20px;
     margin-top: 50px;
     margin-bottom: 50px;
+    align-items: center;
+   
     
 }
 .ulheadr{
@@ -32,7 +34,7 @@ header div button
 }
 nav.fixe{
     position: fixed;
-    top: 10%;
+    top: 6%;
     right: 40%;
     z-index: 11;
     
@@ -90,6 +92,38 @@ header ul li:hover{
     cursor: pointer;
     padding: 20px 10px;
 }
+.test-langue , .right-en{
+    opacity: 0.9;
+    position: fixed;
+    z-index: 10;
+    top:6%;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 4px 10px;
+    border-radius: 6px;
+    
+}
+header .test-langue  .language-class , header .right-en  .language-class{
+padding: 10px;
+cursor: pointer;
+transition: 0.5s;
+width: 100px;
+align-items: center;
+justify-content: center;
+
+}
+header .test-langue  .language-class button:hover , header .right-en  .language-class button:hover {
+    transform: scale(1.02);
+    color: rgb(189, 27, 27);
+    background-color: #f5f5f5;
+}
+header .test-langue  .language-class button , header .right-en  .language-class button{
+    background-color: blue;
+    margin: 3px; 
+    padding: 10px;
+    transition: .5s;
+    width: 100px;
+}
 .pobabe li{
     border-bottom: 1px solid rgba(128, 128, 128, 0.76);
     width: 98%;
@@ -142,5 +176,30 @@ header nav.nav{
 }
 .pobabe{
     display: block;
+}
+header{
+      flex-direction: row-reverse;
+}
+.left-ar{
+    position: fixed;
+    left:10% !important;
+    display: block;
+    
+}
+
+.right-en{
+    position: fixed;
+    right: 10% !important;
+    top:3%;
+  padding: 10px;
+    border-radius: 8px;
+     
+}
+header .test-langue {
+    position: fixed;
+    left:10%;
+    top:3%;
+    padding: 10px;
+    border-radius: 8px;
 }
 }

@@ -10,12 +10,18 @@
     background-color: #123;
     object-fit: cover;
     object-fit: contain;
+  
+   
     /* object-fit: contain; */
     
 }
 .parent-img-div{
     /* border:1px solid rgb(103, 103, 226);  */
     /* background-color: rgb(14, 14, 168); */
+    animation:div-img 2s 1 ease-out;
+     /* animation: fadeScroll 0.6s linear; */
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
     border-radius: 20px;
     padding: 1px;
     height: 98%;
@@ -53,6 +59,13 @@ font-size: 16px;
     /* height: 300px; */
     /* border: 2px solid red; */
 }
+.title{
+    margin: 10px;
+}
+.projet-parent{
+    width:80%;
+    margin: auto;
+}
 /*animation*/
 @keyframes fadeScroll{
     0%{
@@ -62,13 +75,25 @@ font-size: 16px;
         scale:100%;
     }
 }
-.title{
-    margin: 10px;
+@keyframes div-img{
+    0%{
+        margin-left: -400px;
+    }
+    
+    100%{
+        margin-left: 0px;
+    }
 }
-.projet-parent{
-    width:80%;
-    margin: auto;
+@keyframes imgs {
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
 }
+
 @media (max-width:1000px) {
    
     .projet-parent{

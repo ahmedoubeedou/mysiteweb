@@ -1,21 +1,24 @@
 import "./section.css";
+import srcImg  from "../assets/ba.png";
 //icons 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import CodeIcon from '@mui/icons-material/Code';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { useTranslation } from "react-i18next";
 
 export default function Section()
 {
-    const srcImg = "/src/assets/ba.png";
+    // const srcImg = "./src/assets/ba.png";
+    const { t, i18n } = useTranslation();
     return (
 <main className=" flex items-center gap-2 main" id="About">
     <section className="section-left  grow" id="home">
         <div>
-   <h1>Hi,I'm Ahmedou Mohamed<br/><span></span></h1>
-   <p>I am a student who is still learning and improving my skills in web development</p>
-   <p>I enjoy trying new technologies and  building small projects  Even though I’m at</p>
-   <p>the beginning I’m motivated and  passionate about growing as a developer</p>
+   <h1>{t("Hi,I'm Ahmedou Mohamed")}<br/><span></span></h1>
+   <p>{t("I am a student who is still learning and improving my skills in web development")}</p>
+   <p>{t("I enjoy trying new technologies and  building small projects  Even though I’m at")}</p>
+   <p>{t("the beginning I’m motivated and  passionate about growing as a developer")}</p>
    </div>
    <div className="div-link">
 <a href="https://www.linkedin.com/in/ahmedoumohamed-beedou-1b9535383" target="_blank"><LinkedInIcon className="icons-link"/></a>

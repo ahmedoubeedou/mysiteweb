@@ -6,17 +6,19 @@ import CodeIcon from '@mui/icons-material/Code';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import OutgoingMailIcon from '@mui/icons-material/OutgoingMail';
+import { useTranslation } from "react-i18next";
 export default function Fotter()
 {
+     const { t, i18n } = useTranslation();
     return(
         <footer className="flex footer-css items-center justify-between " id="Contact">
             <div className="div-childe">
-                <h1 >Contact ME</h1>
+                <h1 >{t("Contact ME")}</h1>
 <div>
     
 <p>
-    I'm a passionate web developer open to new opportunities and<br/> 
-    exciting projects. Don’t hesitate to reach out!
+   {t("I'm a passionate web developer open to new opportunities and")} <br/> 
+    {t("exciting projects. Don’t hesitate to reach out!")}
 
 </p>
 <div>
@@ -31,8 +33,8 @@ export default function Fotter()
             <PhoneInTalkIcon className="icons"/> <span>+222 43 16 85 28</span>
 
         </div>
-          <div>
-       <OutgoingMailIcon className="icons"/> <span className="text-span">ahmedoomohamedbedou@gmail.com</span>
+          <div >
+       <OutgoingMailIcon className="icons"/> <span className="text-span ">ahmedoomohamedbedou@gmail.com</span>
           </div>
     
     </div>
@@ -47,20 +49,20 @@ export default function Fotter()
             <div className=" div-form">
 <form>
     <div>
-        <label htmlFor="name">Your Name</label>
-        <input type="text" placeholder="Your name" id="name" required />
+        <label htmlFor="name">{t("Your Name")}</label>
+        <input type="text" placeholder={t("Your Name")} id="name" required />
     </div>
      <div>
-        <label htmlFor="email"> Your Email</label>
-        <input type="email" placeholder="Your Email" id="email" required />
+        <label htmlFor="email"> {t("Your Email")}</label>
+        <input type="email" placeholder={t("Your Email")} id="email" required />
     </div>
      <div>
-        <label htmlFor="text">Your Subject</label>
-        <input type="text" placeholder="Your Subject" id="text" required />
+        <label htmlFor="text">{t("Your Subject")}</label>
+        <input type="text" placeholder={t("Your Subject")} id="text" required />
     </div>
      <div>
-        <label htmlFor="message">Your Message</label>
-       <textarea id="message" placeholder="Your Message">
+        <label htmlFor="message">{t("Your Message")}</label>
+       <textarea id="message" placeholder={t("Your Message")}>
         
        </textarea>
     </div>

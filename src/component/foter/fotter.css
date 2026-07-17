@@ -95,8 +95,7 @@ footer.footer-css .div-form , form{
 @media (max-width:800px){
     footer.footer-css{
         flex-direction: column;
-        gap:20px;
-       
+        gap:20px;    
     }
     footer.footer-css div.div-childe{
     width: 99%;
@@ -106,4 +105,5 @@ footer.footer-css .div-form , form{
         letter-spacing: 0.3px;
         font-weight: 900;
     }
+  
 }
