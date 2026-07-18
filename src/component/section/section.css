@@ -3,8 +3,7 @@ section h1{
     font-weight: 900;
 
 }
-section h1 span::before{
-    animation: webde 5s infinite ease-in-out;
+section h1 span.animate{
     animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
     color:red;
     content: "";
@@ -22,56 +21,6 @@ section.section-right img{
     padding: 2px;
     background-color: #94112b;
 }
-/*animation*/
-/*animation pour lecriture*/
-@keyframes webde{
-    0%{
-    
-            content: "w";
-        
-    }
-    5%{
-        content: "we";
-    }
-      20%{
-        content: "web";
-    }
-    25%{
-        content: "web D";
-    }
-    35%{
-        content: "web De";
-    }
-     40%{
-        content: "web Dev";
-    }
-    45%{
-        content: "web Deve";
-    }
-    55%{
-        content: "web Devel";
-    }
-    60%{
-        content: "web Devell";
-    }
-    70%{
-         content: "web Devello";
-    }
-    75%{
-         content: "web Devellop";
-    }
-    85%{
-         content: "web Devellope";
-    }
-    95%{
-  content: "web Develloper";
-    }
-    100%{
-   content: "web Develloper!";
-    }
-  
-}
-/*=========== animation pour lecriture ===============*/
 @keyframes myphot{
     0%{
         scale: 0.2;
